@@ -1,0 +1,107 @@
+header {
+	margin: 15px 0;
+}
+
+footer {
+	border-top: 3px solid lightgray;
+	margin-top: 5px;
+	padding: 5px 10px;
+	font-weight: 300;
+}
+
+body {
+	color: #333333;
+	margin: 0 auto;
+	max-width: 700px;
+	padding: 0 15px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.title-space {
+	margin: 15px 0;
+}
+
+.content {
+	flex-grow: 1;
+}
+
+h1 {
+	color: gray;
+	float: left;
+	font-size: 50px;
+	margin: 0;
+}
+
+h2 {
+	color: #777777;
+}
+
+.hidden {
+	display: none;
+}
+
+.visible {
+	display: block;
+}
+
+img.portrait {
+	width: 150px;
+	margin: 10px;
+}
+
+.intro {
+	border: 2px solid darkgray;
+	padding: 10px;
+}
+
+.nav {
+	background-color: lightgray;
+	padding: 10px 10px 10px 0px;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: darkslateblue;
+	font-weight: 700;
+	padding: 10px;
+}
+
+.nav-link:hover {
+	background-color: darkgray;
+	padding: 10px;
+}
+
+#weatherSearch,
+#weatherResults,
+#userMessage {
+	margin: 30px 15px 15px 15px;
+}
+
+#userMessage {
+	font-weight: 600;
+}
+
+.cold {
+	color: rgb(0, 238, 255);
+	font-weight: bold;
+}
+
+.cool {
+	color: rgb(0, 162, 255);
+	font-weight: bold;
+}
+
+.warm {
+	color: rgb(255, 196, 0);
+	font-weight: bold;
+}
+
+.hot {
+	color: rgb(255, 0, 0);
+	font-weight: bold;
+}

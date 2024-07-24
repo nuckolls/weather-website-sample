@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/images/weather-48.png" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+        <div class="content">
+          {{>_header}}
+          <form>
+            <div id="weatherSearch">
+              <input id="txtWeather" placeholder="Enter a location..." />
+              <button id="btnWeather">Current Weather</button>
+            </div>
+            <div id="weatherResults" class="hidden">
+              <div id"weatherLocation">
+                <h3 id="txtLocation"></h3>
+              </div>
+              <div id="currentWeather">
+                <span>The current forecast is </span>
+                <span id="txtForecast"></span>
+                <span> with a temperature of </span>
+                <span id="txtTemperature"></span>
+                <span> degrees, that feels like </span>
+                <span id="txtFeelsLike"></span>
+                <span> degrees.</span>
+              </div>
+            </div>
+            <div id="userMessage" class="hidden"></div>
+          </form>
+        </div>
+
+        {{>_footer}}
+    </main>
+	  <script src="/scripts/app.js"></script>
+  </body>
+</html>
