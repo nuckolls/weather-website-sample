@@ -16,7 +16,7 @@ weatherForm.addEventListener('submit', (e) => {
     const txtFeelsLike = document.getElementById('txtFeelsLike');
     const userMessage = document.getElementById('userMessage');
 
-    fetch('http://localhost:3000/weather?location=' + txtWeatherLocation.value).then((response) => {
+    fetch('/weather?location=' + txtWeatherLocation.value).then((response) => {
         response.json().then((data) => {
             if (data.error) {
                 userMessage.className = 'visible';
