@@ -39,7 +39,10 @@ const weather = ({latitude, longitude, location}, callback) => {
                 forecast,
                 forecastDesc: body.current.weather_descriptions[0],
                 temperature: body.current.temperature,
-                feelslike: body.current.feelslike
+                feelslike: body.current.feelslike,
+                windspeed: body.current.wind_speed,
+                winddirection: body.current.wind_dir,
+                humidity: body.current.humidity
             });
         }
     });

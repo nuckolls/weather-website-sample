@@ -59,7 +59,7 @@ app.get('/weather', (req, res) => {
             });
         }
     
-        weather(data, (error, {location, forecast, forecastDesc, temperature, feelslike} = {}) => {
+        weather(data, (error, {location, forecast, forecastDesc, temperature, feelslike, windspeed, winddirection, humidity} = {}) => {
             if (error) {
                 return res.send({
                     error
@@ -71,23 +71,12 @@ app.get('/weather', (req, res) => {
                 forecast,
                 forecastDesc,
                 temperature,
-                feelslike
+                feelslike,
+                windspeed,
+                winddirection,
+                humidity
             });
         });
-    });
-});
-
-app.get('/products', (req, res) => {
-    if (!req.query.search) {
-        return res.send({
-            error: 'You must provide a search term'
-        });
-    }
-    
-    console.log(req.query);
-
-    res.send({
-        products: []
     });
 });
 
